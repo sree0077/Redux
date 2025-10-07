@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 
-const PostList = createContext({
-  postlist: [],
+export const PostList = createContext({
+  postList: [],
   addPost: () => {},
   deletePost: () => {},
 });
@@ -11,13 +11,15 @@ const postlistReducer = (currPostList, action) => {
 };
 
 const PostListProvider = ({ children }) => {
-  const [postlist, dispatchPostList] = useReducer(postlistReducer, DEFAULT_POST_LIST);
+  const [postList, dispatchPostList] = useReducer(postlistReducer, DEFAULT_POST_LIST);
   const addPost = () => {};
-  const deletePost = () => {};
+  const deletePost = (postId) => {
+    
+  };
   //we can delete the duplicate values from value function if we need
   return (
     <PostList.Provider
-      value={{ postlist: postlist, addPost: addPost, deletePost: deletePost }}
+      value={{ postList: postList, addPost: addPost, deletePost: deletePost }}
     >
       {children}
     </PostList.Provider>

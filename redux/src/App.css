@@ -7,3 +7,14 @@
 .sidebar{
   min-height: 800px;
 }
+.post-card{
+    margin: 20px 50px;
+    min-width: 30rem;
+}
+.hashtag{
+  margin: 0px 3px;
+}
+.reactions{
+  width: 100%;
+  margin: 15px 0px;
+}
