@@ -6,6 +6,7 @@
 }
 .sidebar{
   min-height: 800px;
+  width: 200px;;
 }
 .post-card{
     margin: 20px 50px;
@@ -17,4 +18,9 @@
 .reactions{
   width: 100%;
   margin: 15px 0px;
+}
+.create-post{
+  width:80%;
+  margin-left: 10%;
+  margin-top: 50px;
 }
