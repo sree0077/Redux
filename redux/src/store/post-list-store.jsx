@@ -30,7 +30,7 @@ const PostListProvider = ({ children }) => {
         userId: userId,
         tags: tags,
       }
-    })
+    });
   };
 
   const deletePost = (postId) => {
